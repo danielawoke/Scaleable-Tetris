@@ -1,3 +1,4 @@
+var sound;
 const done = document.getElementById('sumbit');
 var widthButton = document.getElementById("width");
 var lenButton = document.getElementById("length");
@@ -18,6 +19,9 @@ done.addEventListener('click', function(){
   if(Number.isInteger(width) && Number.isInteger(length)){
     front.remove();
     gridCompile(); 
+    sound = document.getElementById('woo');
+    sound.play();
+
   }else{
     alert("You need to put a whole number in");
   }
@@ -93,7 +97,7 @@ function gridCompile(){
     grid = grid+"</div><div id='spaz'><style>#spaz{margin-top:"+space+"px;}</style>";
   }
   grid = grid + "</div></div></div></div>";
-  grid = grid +"<script src='ppp.js'></script><link rel='stylesheet' type='text/css' href='style.css'>";
+  grid = grid +"<script src='ppp.js'></script><link rel='stylesheet' type='text/css' href='style.css'><audio id='woo' src='song.mp3' controls='control'></audio>";
   document.write(grid);}
 //array
   {
@@ -578,8 +582,6 @@ function dead(){
             var sx = document.createElement("div");
             document.body.appendChild(sx);
             document.body.appendChild(newDiv);
-
-
             document.getElementById('sss').innerHTML = score;
 
 
