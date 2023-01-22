@@ -38,7 +38,7 @@ function gridCompile(){
    var space = 20;
    var otherPads = 10;
 
-   while(shrinkx>20 || shrinky>20){
+   while(shrinkx>20 || shrinky>16){
       bottomPad = bottomPad/2;
       space = space/2;
       otherPads = space/2;
