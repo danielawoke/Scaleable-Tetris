@@ -1,1 +1,43 @@
-adsadsadsadad
+My distant tangential comerade,
+
+The project hosted on this repository a specialized remake of tetris where 
+you are able to customize the size of the grid, or in other words, rescale 
+the grid. while working on this as the 3rd project I've developed in my 
+software engineering carrer, I wanted to create something that would have 
+a noteable presence on the internet; This has been achieved successfully, and
+the game can be played entirely off an internet browser; the link above with
+my repository name will take you directly to the game it's self.
+
+I ideally wanted to avoid having any traffic directed to the repository with the
+default github pages name, so i created a directory labled "github version" 
+where I placed all the same files into. The files out side of that directory can
+be viewed as an offline version of the game, where if you download all three
+of the files and put them in the same directory, you can play the same game. 
+
+Now, for the actual game its self. If you want to play standard tetris, set
+the width = 10 and length = 20; The scalability feauture is a little bit rusty
+in the sense that I wasn't able to 'squeeze' all the blocks as much I wanted
+to as the width and length increased. So if you try to make the length greater
+than 50-60, or the width greater than 30, it might be kinda hard to see whats 
+going on. 
+
+I appologize for there not being any colors. Im gonna go back to school soon
+so i can't program it any time soon, however, I do have an idea for how you
+could approach this if you'd like to do me the favor of creating a commit for me.
+The entire game make seem like its object oriented, but it is not. It's matrix based.
+Its one gigantic integer based 2d array changing its numbers like a carnival sign.
+Right now, the way it is set up, all the 1s are the moving pieces that the
+player is controlling, and the 2s are the settled pieces that have already fallen.
+What you can do is instead of having it only be 1s and 2s, you can have it be
+11s-17s and 21s-27s, you know what I mean? So basicly, everything from 11-17
+will be a moving piece with a specific color attached to that number (one of the
+7 rainbow colors). Once the piece has settled, it will transform into it's coresponding
+number (example: 14(setled) = 24, 17(settled) = 27 ). If you really do plan to take on
+this mission for me, a couple of key methods to look out for are createPiece(), dead(),
+rotate(), updateVisualGrid(), close(), left(), right(), and down(). These methods
+will definitely have to be reprogramed extensively. 
+
+I hope you enjoy what I have created. The world of tetris derivations has now become
+larger. Take care, and say hi to the next guy you see with an ice cream cone. 
+
+Daniel Awoke
